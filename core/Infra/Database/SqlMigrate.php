@@ -8,7 +8,7 @@ require_once(__DIR__ . "/../../../vendor/autoload.php");
 $dotenv = Dotenv::createImmutable(__DIR__ . "/../../../");
 $dotenv->load();
 
-$database = SqlConnection::connect();
+$database = (new SqlConnection)->connect();
 
 try {
 
@@ -19,10 +19,10 @@ try {
     $migrationFolder = __DIR__ . "/Migrations/Sql/$version";
     
     if(!is_dir($migrationFolder)) {
-        throw new Exception("Migration folder not found", 500);
+        throw new Exception("Migration $version folder not found", 500);
     }
     
-    echo "Searching for migrations...\n";
+    echo "Searching for migrations $version...\n";
 
     $migrations = array_map(function ($fileSrc) use ($migrationFolder) {
 
