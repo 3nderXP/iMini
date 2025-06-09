@@ -2,7 +2,6 @@
 
 namespace Core\Infra\Database;
 
-use Core\Models\Interfaces\DatabaseConnectionInterface;
 use PDO;
 
 class SqlConnection {
