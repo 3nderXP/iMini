@@ -14,7 +14,7 @@ class RunMigration implements CommandInterface {
 
     public function __construct() {
 
-        $this->description = "Migrate Database";
+        $this->description = "Run migrations.";
 
     }
 

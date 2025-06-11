@@ -14,7 +14,7 @@ class RollbackMigration implements CommandInterface {
 
     public function __construct() {
 
-        $this->description = "Migrate Database";
+        $this->description = "Rollback the last migration.";
 
     }
 
