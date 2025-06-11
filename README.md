@@ -255,7 +255,6 @@ php cli.php [comando] [argumentos]
 
 | Comando               | Descrição                                            |
 |-----------------------|------------------------------------------------------|
-| `--help`              | Mostra todos os comandos disponíveis com descrições  |
 | `make:migration`      | Cria um novo arquivo de migração de banco de dados   |
 | `run:migration`       | Executa migrações pendentes de banco de dados        |
 | `rollback:migration`  | Reverte a última migração de banco de dados          |
@@ -265,7 +264,7 @@ php cli.php [comando] [argumentos]
 #### Exibir ajuda
 
 ```bash
-php cli.php --help
+php cli.php
 ```
 
 #### Criar uma nova migração
