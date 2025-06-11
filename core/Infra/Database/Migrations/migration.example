@@ -1,0 +1,19 @@
+<?php
+
+use Core\Infra\Database\Migrations\MigrationInterface;
+
+return new class implements MigrationInterface {
+
+    public function up(PDO $database): void {
+
+        // TODO: Implement up() method.
+
+    }
+
+    public function down(PDO $database): void {
+        
+        // TODO Implement down() method.
+
+    }
+
+};
