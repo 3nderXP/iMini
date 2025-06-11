@@ -11,7 +11,6 @@ $argsLength = $_SERVER["argc"];
 $args = array_slice($_SERVER["argv"], 1);
 
 $commands = [
-    "--help" => Commands\Help::class,
     "make:migration" => Commands\MakeMigration::class,
     "run:migration" => Commands\RunMigration::class,
     "rollback:migration" => Commands\RollbackMigration::class,
@@ -19,7 +18,7 @@ $commands = [
 
 if(empty($args)) {
     
-    $help = new $commands["--help"];
+    $help = new Commands\Help;
     $help->handle(["commands" => $commands]);
 
     exit;

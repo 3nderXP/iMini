@@ -15,7 +15,7 @@ class MakeMigration implements CommandInterface {
 
     public function __construct() {
 
-        $this->description = "Make Database Migration File";
+        $this->description = "Make Migration File";
         
     }
 
